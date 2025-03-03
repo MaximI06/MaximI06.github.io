@@ -5,6 +5,13 @@ body {
     flex-direction: column;
     align-items: center;
 }
+.main-page {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .navigation-bar {
     width: 70vw;
     height: 10vh;
@@ -61,6 +68,9 @@ body {
     width: 10px;
 
     margin-right: 3px;
+    border-radius: 12px;
+
+    background-color: #ffd100;
 }
 .home-description {
     display: flex;
@@ -169,7 +179,7 @@ body {
     width: auto;  
 }
 
-/* -----Home page above----- */
+/* -----About Page below----- */
 
 .about-page {
     width: 70vw;
@@ -188,6 +198,17 @@ body {
     margin: 0px;
     padding: 20px;
 }
+.about-page h2{
+    text-align: center;
+
+    color: #d6d6d6;
+    font-family: Inter;
+    font-weight: 200;
+    font-size: 30px;
+    
+    margin: 0px;
+    padding: 0px;
+}
 .about-page p{
     width: 46vw;
 
@@ -195,6 +216,7 @@ body {
 
     color: #d6d6d6;
     font-family: Inter;
+    font-weight: 400;
     font-size: 15px;
 }
 .about-line {
@@ -205,15 +227,170 @@ body {
 
     border-radius: 12px;
 }
+
+/* -----Project Display----- */
+
 .portfolio-container {
-    
+    width: 70vw;
+
+    /* border: 3px dashed red; */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
 }
 .project {
     width: 20vw;
-    height: 60vh;
-
+    height: auto;
 
     background-color: #333533;
     border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.project-image {
+    width: 260px;
+    height: 260px;
+
+    background-color: #d6d6d6;
+    border-radius: 12px;
+    
+    margin-top: 15px;
+}
+.project-desc {
+
+    width: 260px;
+
+    /* border: 3px dashed blue; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.desc-buttons {
+    width: 260px;
+
+    /* border: 2px dashed rgb(0, 255, 0); */
+
+    display: flex;
+    flex-direction: row;
+
+    gap: 7px;
+}
+.project-desc h1{
+    font-size: 30px;
+
+    margin: 10px 0px 0px 0px;
+    padding: 0px;
+}
+.project-desc h2{
+
+    color: #d6d6d6;
+    font-family: Inter;
+    font-weight: 300;
+    font-size: 15px;
+
+    text-align: start;
+}
+.project-desc h3{
+    color: #ffd100;
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 15px;
+
+    margin: 10px 0px 5px 0px;
+}
+.project-desc-buttons {
+    display: flex;
+    flex-direction: row;
+
+    margin: 0px 0px 10px 0px;
+    padding: 0px;
+}
+.project-desc button {
+    height: 40px;
+    width: 40px;
+
+    background: rgb(214,214,214);
+    background: linear-gradient(155deg, rgba(214,214,214,1) 0%, rgba(108,109,108,1) 24%, rgba(95,96,95,1) 37%, rgba(54,56,54,1) 77%, rgba(51,53,51,1) 100%);
+    border: 0.5px solid  #d6d6d6; 
+    border-radius: 12px;
+    
+    /* Center image inside button */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.project-desc img {
+    height: 90%;
+    width: auto;
 }
 
+/* Contact Me Page */
+
+.contact-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-line {
+    width: 70vw;
+    height: 3px;
+    background-color: #ffd100;
+    border-radius: 12px;
+    margin: 100px 0 0 0;
+  }
+  .contact-page h1 {
+    color: #ffd100;
+    font-family: Inter, sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    margin: 30px;
+    padding: 0;
+  }
+  .contact-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+    gap: 20px;                           /* Space between boxes */
+    padding: 20px;                       /* Space around the grid */
+    background-color: #333533;
+    border-radius: 12px;
+  }
+  .contact-info-box {
+    background-color: #d6d6d6;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    min-width: 30vw;
+    min-height: 50px;
+  }
+  .contact-info-box p{
+    color: #333533;
+    font-family: Inter;
+    font-weight: 300;
+    font-size: 20px;
+    margin:0px 0px 0px 10px;
+    padding: 0px;
+  }
+  .contact-info-box ion-icon{
+    font-size: 40px;
+  }
+  .contact-info-box a{
+    color: #333533;
+    font-family: Inter;
+    font-weight: 300;
+    font-size: 20px;
+    margin-left: 10px;
+    padding: 0px;
+
+    text-decoration: none;
+  }
+  
+  
+  
